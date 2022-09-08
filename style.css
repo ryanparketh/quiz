@@ -1,0 +1,13 @@
+section h1 {
+color: blueviolet;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 50px;
+text-align: center;
+padding: 10px;
+}
+
+section p {
+    text-align: center;
+    padding: auto;
+    font-size: 20px;
+}
