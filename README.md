@@ -5,7 +5,7 @@ I used HTML, CSS, and JavaScript to create a multiple choice quiz.
 
 ## Live Website!
 
-[link to live website]()
+[link to live website](https://ryanparketh.github.io/quiz/)
 
 
 ## Screenshot 
