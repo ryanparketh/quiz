@@ -19,6 +19,8 @@ function countdown_timer(){
         clearInterval(cinterval);
     }
 }
+
+cinterval = setInterval('countdown_timer()', 1000);
 start.onclick = () => {
     info_box.classList.add("activeInfo");
 }
