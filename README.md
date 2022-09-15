@@ -1,7 +1,7 @@
 # Quiz
 
 ## Description
-I used HTMl, CSS, and JavaScript to create a multiple choice quiz.
+I used HTML, CSS, and JavaScript to create a multiple choice quiz.
 
 ## Live Website
 [link to live website]()
