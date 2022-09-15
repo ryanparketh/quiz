@@ -1,24 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./style.css">
-    <!--Title for Browser-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coding Quiz Challenge</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
-<header>
-<nav>
-    <ul>
-        <li><a href="#View-High-Scores">View High Scores</a> </li>
-    </ul>
-</nav>
-</header>
-<section>
-    <h1>Coding Quiz Challenge</h1>
-    <p>
-        descr for coding quiz
-    </p>
-</section>
+<body>
+    <!-- start Quiz button -->
+    <div class="start">
+        <!--add a h1 to starting page-->
+        <h1>Coding Quiz Challenge</h1>
+        <button>Start Quiz</button></div>
+    <!-- create a box that will display how much time is given and if a wrong answer is presented -->
+    <div class="info_box">
+        <div class="info-title"><span>Are You Ready?</span></div>
+        <div class="info-list">
+            <div class="info">1. You will have 30 seconds total to complete this quiz.</div>
+            <div class="info">2. Each wrong answer you will lose 5 seconds of time.</div>
+
+        </div>
+        <div class="buttons">
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Coding Quiz Challenge</div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">30</div>
+            </div>
+        </header>
+        <section>
+            <div class="que_text">
+              
+            </div>
+            <div class="option_list">
+            </div>
+        </section>
+        <!-- footer of Quiz Box -->
+        <footer>
+            <div class="total_que">
+              
+            </div>
+            <button class="next_btn">Next</button>
+        </footer>
+    </div>
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text">
+        </div>
+        <div class="buttons">
+            <!--Create buttons for quit and high scores-->
+            <button class="restart">High Scores</button>
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
+    <script src="./q.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
 </html>
