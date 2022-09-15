@@ -1,8 +1,8 @@
 //all required elements
 const start = document.querySelector(".start button");
 const info_box = document.querySelector(".info_box");
-const exit_btn = info_box.querySelector(".buttons .quit");
-const continue_btn = info_box.querySelector(".buttons .restart");
+const exit_btn = document.querySelector(".quit");
+const continue_btn = document.querySelector(".restart");
 const quiz_box = document.querySelector(".quiz_box");
 const result_box = document.querySelector(".result_box");
 const option_list = document.querySelector(".option_list");
@@ -33,6 +33,8 @@ continue_btn.onclick = () => {
     startTimer(10);
     startTimerLine(0);
 }
+
+
 let timeValue = 10;
 let que_count = 0;
 let que_numb = 1;
@@ -65,6 +67,7 @@ next_btn.onclick = () => {
         showResult();
     }
 }
+
 // getting questions and options from array
 function showQuetions(index) {
     const que_text = document.querySelector(".que_text");
@@ -109,7 +112,7 @@ function optionSelected(answer) {
         option_list.children[i].classList.add("disabled");
     }
     next_btn.classList.add("show");
-
+}
     function showResult() {
         info_box.classList.remove("activeInfo");
         quiz_box.classList.remove("activeQuiz");
@@ -168,4 +171,4 @@ function optionSelected(answer) {
         let totalQueCounTag = '<span><p>' + index + '</p> of <p>' + questions.length + '</p> Questions</span>';
         bottom_ques_counter.innerHTML = totalQueCounTag;
     }
-}
+
